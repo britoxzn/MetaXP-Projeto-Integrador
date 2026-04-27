@@ -3,6 +3,10 @@
 O **MetaXP** é uma plataforma inovadora que une produtividade e gamificação. O sistema transforma a gestão de tarefas pessoais em uma experiência interativa, utilizando Inteligência Artificial para planejamento e mecânicas de RPG para combater a procrastinação.
 https://plataforma-de-planejamento.great-site.net/register.php
 
+## Integrantes
+* Luis Brito
+* Henrique Assunção e Arthur Schettini
+
 ## 🛠 Funcionalidades Principais
 
 1.  **Dashboard Inteligente:** Painel centralizado com métricas de desempenho e visão geral de progresso.
