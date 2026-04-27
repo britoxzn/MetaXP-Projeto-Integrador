@@ -1,6 +1,7 @@
 # 🚀 MetaXP - Sistema Gamificado de Gestão de Metas com IA
 
 O **MetaXP** é uma plataforma inovadora que une produtividade e gamificação. O sistema transforma a gestão de tarefas pessoais em uma experiência interativa, utilizando Inteligência Artificial para planejamento e mecânicas de RPG para combater a procrastinação.
+https://plataforma-de-planejamento.great-site.net/register.php
 
 ## 🛠 Funcionalidades Principais
 
