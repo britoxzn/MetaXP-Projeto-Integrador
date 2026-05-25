@@ -5,7 +5,8 @@ https://plataforma-de-planejamento.great-site.net/register.php
 
 ## Integrantes
 * Luis Brito
-* Henrique Assunção e Arthur Schettini
+* Henrique Assunção
+* Arthur Schettini
 
 ## 🛠 Funcionalidades Principais
 
