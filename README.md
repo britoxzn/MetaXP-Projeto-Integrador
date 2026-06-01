@@ -1,39 +1,57 @@
-# 🚀 MetaXP - Sistema Gamificado de Gestão de Metas com IA
+# 🚀 MetaXP | Plataforma Gamificada de Gestão de Hábitos com IA
 
-O **MetaXP** é uma plataforma inovadora que une produtividade e gamificação. O sistema transforma a gestão de tarefas pessoais em uma experiência interativa, utilizando Inteligência Artificial para planejamento e mecânicas de RPG para combater a procrastinação.
-https://plataforma-de-planejamento.great-site.net/register.php
+![Status](https://img.shields.io/badge/Status-Estável_e_Validado-success?style=for-the-badge)
+![PHP](https://img.shields.io/badge/PHP-8.0+-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-Banco_Relacional-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Documentação](https://img.shields.io/badge/Documentação-Atualizada-blue?style=for-the-badge)
 
-## Integrantes
-* Luis Brito
-* Henrique Assunção
-* Arthur Schettini
+> **Projeto Integrador IV - Centro Universitário de Brasília (CEUB)** > **Orientador:** Prof. Thiago Leite  
+> **Curso:** Tecnologia em Análise e Desenvolvimento de Sistemas  
+## 👥 Integrantes do Grupo
+* **Luis Brito** - RA: 22402920
+* **Henrique Assunção** - RA: 22402116
+* **Arthur Schettini** - RA: [RA do Arthur]
 
-## 🛠 Funcionalidades Principais
+---
 
-1.  **Dashboard Inteligente:** Painel centralizado com métricas de desempenho e visão geral de progresso.
-2.  **Sistema de Ofensivas (Streaks):** Contador de "foguinhos" que monitora dias consecutivos de atividade para incentivar a consistência.
-3.  **Planejamento com IA (Meta.IA):** Integração com inteligência artificial para gerar planos de ação automáticos baseados nos objetivos do usuário.
-4.  **Sistema de XP e Níveis:** Ganho de experiência por tarefas concluídas, permitindo a evolução de nível do perfil.
-5.  **Gráficos de Atividade:** Visualização dinâmica da evolução semanal utilizando a biblioteca Chart.js.
-6.  **Lembretes Automáticos:** Sistema de notificações por e-mail para metas próximas ao vencimento.
-7.  **Ranking Global:** Gamificação social com exibição dos líderes de XP da plataforma.
-8.  **Gestão de Metas CRUD:** Interface completa para criar, listar, editar e excluir objetivos pessoais.
-9.  **Categorização de Objetivos:** Organização de metas por áreas como Pessoal, Profissional, Saúde e Educação.
-10. **Segurança via Chave de API:** Scripts críticos (como notificações) protegidos por tokens de segurança para acesso via Cron Jobs externos.
-11. **Autenticação Segura:** Sistema de login e proteção de rotas verificando sessão do usuário (auth_check).
-12. **Histórico de Conquistas:** Galeria de troféus desbloqueados por marcos alcançados no sistema.
-13. **Upload de Perfil:** Personalização de conta com suporte a fotos de perfil dos usuários.
-14. **Design Responsivo com Dark Mode:** Interface adaptável para dispositivos móveis e suporte a tema escuro.
-15. **Arquitetura de Banco de Dados Relacional:** Estrutura otimizada em MySQL para rastreabilidade de metas e logs de XP.
+## 📋 Índice
+1. [Visão Geral da Solução](#-visão-geral-da-solução)
+2. [Documentação Técnica e Auditoria](#-documentação-técnica-e-auditoria)
+3. [Arquitetura e Engenharia do Projeto](#-arquitetura-e-engenharia-do-projeto)
+4. [Instruções de Instalação e Deploy](#-instruções-de-instalação-e-deploy)
+5. [Equipe e Rastreabilidade](#-equipe-e-rastreabilidade)
 
-## 🚀 Tecnologias Utilizadas
-* **Linguagem:** PHP 8.x
-* **Banco de Dados:** MySQL (Hospedado via InfinityFree)
-* **Frontend:** HTML5, CSS3, JavaScript (Chart.js, Canvas-confetti)
-* **Segurança:** PDO (PHP Data Objects) e Chaves de Segurança URL
+---
 
-## 📋 Como executar o projeto
-1. Realize o upload dos arquivos para um servidor PHP.
-2. Importe o banco de dados SQL disponível na pasta `/docs`.
-3. Configure as credenciais no arquivo `conexao.php`.
-4. Acesse via navegador para criar sua conta.
+## 💡 Visão Geral da Solução
+
+O **MetaXP** é um ecossistema web focado no combate à procrastinação e na retenção de usuários através do cruzamento de duas vertentes principais:
+1. **Motor de Gamificação:** Utilização de mecânicas de *Streaks* (ofensivas), pontos de experiência (XP) e desbloqueio de conquistas para garantir constância.
+2. **Integração Cognitiva (IA):** Uso de Inteligência Artificial generativa para a quebra automatizada de objetivos complexos em micro-tarefas acionáveis, reduzindo a carga cognitiva do usuário.
+
+---
+
+## 📂 Documentação Técnica e Auditoria
+
+Atendendo aos rigorosos critérios acadêmicos e de engenharia, toda a documentação que fundamenta as decisões de negócio e infraestrutura do MetaXP encontra-se centralizada no diretório `/docs`:
+
+* 📑 **[Resumo Executivo Oficial](./docs/resumo_executivo.pdf):** Definição de escopo, público-alvo e MVP.
+* 💾 **[Modelagem e Dump do Banco de Dados](./docs/banco.sql):** Estrutura DDL/DML das tabelas relacionais.
+* 🏛️ **[Arquitetura e Regras de Negócio](./docs/arquitetura_e_regras.md):** Fundamentação da stack (PHP/MySQL) e lógicas de cálculo de XP/Streak.
+* 🤖 **[Integração e Fallback da IA](./docs/documentacao_ia.md):** Mapeamento do contrato de dados via JSON e estratégias de contingência.
+* 🧪 **[Roteiro de Evidências e Testes](./docs/evidencias_teste.md):** Homologação dos fluxos principais da aplicação.
+
+---
+
+## 🛠️ Arquitetura e Engenharia do Projeto
+
+Visando a escalabilidade e a redução de acoplamento (separação de responsabilidades), o repositório foi modularizado nas seguintes camadas:
+
+```text
+📦 MetaXP-Projeto-Integrador
+ ┣ 📂 /api        # Endpoints assíncronos e processamento de IA (Generative AI)
+ ┣ 📂 /config     # Centralização de credenciais (Variáveis de Ambiente / DB)
+ ┣ 📂 /docs       # Assets acadêmicos e diagramações
+ ┣ 📂 /includes   # Helpers de validação, autenticação e core de gamificação
+ ┣ 📂 /assets     # Recursos estáticos controlados (CSS, JS)
+ ┗ 📜 *.php       # Camada de Apresentação (Views/Telas visíveis ao usuário na raiz)
