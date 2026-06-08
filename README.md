@@ -98,4 +98,4 @@ git clone [https://github.com/britoxzn/MetaXP-Projeto-Integrador.git](https://gi
 
 - Acesse o projeto pelo navegador através do endereço local padrão. O arquivo raiz index.php se encarregará de rotear você automaticamente para a tela de autenticação segura em /pages/login.php.
 
-- MetaXP © 2024 - Desenvolvido para o Centro Universitário de Brasília.
+MetaXP © 2024 - Desenvolvido para o Centro Universitário de Brasília.
