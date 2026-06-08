@@ -70,32 +70,32 @@ O projeto adota uma arquitetura modularizada focada na separação de responsabi
 O sistema foi otimizado para rodar de forma nativa em ambientes de hospedagem compartilhada (ex: Apache/InfinityFree) ou servidores locais (XAMPP).
 
 Pré-requisitos
-Servidor Web (Apache / Nginx)
+- Servidor Web (Apache / Nginx)
 
-PHP 8.0 ou superior (com extensão cURL devidamente ativa para comunicação com a API de IA)
+- PHP 8.0 ou superior (com extensão cURL devidamente ativa para comunicação com a API de IA)
 
-MySQL 5.7+ ou MariaDB
+- MySQL 5.7+ ou MariaDB
 
 Passo a Passo para Execução Local
-Clonagem do Repositório:
+1. Clonagem do Repositório:
 git clone [https://github.com/britoxzn/MetaXP-Projeto-Integrador.git](https://github.com/britoxzn/MetaXP-Projeto-Integrador.git)
 
-Setup do Banco de Dados:
+1. Setup do Banco de Dados:
 
-Acesse seu gerenciador de banco de dados (ex: phpMyAdmin).
+- Acesse seu gerenciador de banco de dados (ex: phpMyAdmin).
 
-Crie um schema vazio utilizando a collation utf8mb4_general_ci.
+- Crie um schema vazio utilizando a collation utf8mb4_general_ci.
 
-Importe o script estrutural localizado em /docs/banco.sql.
+- Importe o script estrutural localizado em /docs/banco.sql.
 
-Parametrização do Sistema:
+2. Parametrização do Sistema:
 
-Navegue até a pasta /config e configure o arquivo conexao.php com as credenciais do seu ambiente local (host, user, password, dbname).
+- Navegue até a pasta /config e configure o arquivo conexao.php com as credenciais do seu ambiente local (host, user, password, dbname).
 
-Inicialização:
+3. Inicialização:
 
-Inicialize os serviços do seu servidor local.
+- Inicialize os serviços do seu servidor local.
 
-Acesse o projeto pelo navegador através do endereço local padrão. O arquivo raiz index.php se encarregará de rotear você automaticamente para a tela de autenticação segura em /pages/login.php.
+- Acesse o projeto pelo navegador através do endereço local padrão. O arquivo raiz index.php se encarregará de rotear você automaticamente para a tela de autenticação segura em /pages/login.php.
 
-MetaXP © 2024 - Desenvolvido para o Centro Universitário de Brasília.
+- MetaXP © 2024 - Desenvolvido para o Centro Universitário de Brasília.
