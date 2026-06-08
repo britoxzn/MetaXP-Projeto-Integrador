@@ -8,9 +8,9 @@
 > **Projeto Integrador IV - Centro Universitário de Brasília (CEUB)** > **Orientador:** Prof. Thiago Leite  
 > **Curso:** Tecnologia em Análise e Desenvolvimento de Sistemas  
 ## 👥 Integrantes do Grupo
-* **Luis Brito** - RA: 22402920
-* **Henrique Assunção** - RA: 22402116
-* **Arthur Schettini** - RA: [RA do Arthur]
+* **Luis Brito** - RA: 22402920 - Engenharia de Backend e Gamificação
+* **Henrique Assunção** - RA: 22402116 - Modelagem de Dados e Versionamento Documental
+* **Arthur Schettini** - RA: [RA do Arthur] - Arquitetura Técnica e Regras de Teste
 
 ---
 
@@ -55,3 +55,5 @@ Visando a escalabilidade e a redução de acoplamento (separação de responsabi
  ┣ 📂 /includes   # Helpers de validação, autenticação e core de gamificação
  ┣ 📂 /assets     # Recursos estáticos controlados (CSS, JS)
  ┗ 📜 *.php       # Camada de Apresentação (Views/Telas visíveis ao usuário na raiz)
+
+ MetaXP © 2024 - Desenvolvido para o Centro Universitário de Brasília.
