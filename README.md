@@ -71,20 +71,20 @@ Toda a propriedade intelectual e as evidências de engenharia do projeto estão 
  ┣ 📂 includes   # Helpers de validação, segurança e core de regras da gamificação
  ┣ 📂 pages      # Camada de Apresentação (Views/Telas do usuário final)
  ┗ 📜 index.php  # Ponto de entrada (Bootstrapper com redirecionamento limpo)
+```
 
 🚀 Instruções de Instalação e Execução
 📋 Pré-requisitos
-Servidor Web: Apache ou Nginx (ambiente local como XAMPP/MAMP ou ambiente de produção como InfinityFree).
+- Servidor Web: Apache ou Nginx (ambiente local como XAMPP/MAMP ou ambiente de produção como InfinityFree).
 
-PHP: Versão 8.0+ com a extensão cURL devidamente habilitada.
+- PHP: Versão 8.0+ com a extensão cURL devidamente habilitada.
 
-Banco de Dados: SGBD MySQL ou MariaDB.
+- Banco de Dados: SGBD MySQL ou MariaDB.
 
 💻 Instalação Passo a Passo
-Clone o repositório no diretório do seu servidor local ou ambiente de hospedagem:
-
-Bash
+1. **Clone o repositório no diretório do seu servidor local ou ambiente de hospedagem:
 git clone [https://github.com/britoxzn/MetaXP-Projeto-Integrador.git](https://github.com/britoxzn/MetaXP-Projeto-Integrador.git)
+
 2. **Importe o banco de dados** utilizando o script estrutural contido em `/docs/banco.sql` através do seu gerenciador (como phpMyAdmin).
 3. **Configure as credenciais** de acesso ao banco editando os parâmetros dentro de `/config/conexao.php`.
 4. **Execute a aplicação** acessando o endereço raiz no seu navegador. O arquivo `index.php` tratará o roteamento inicial seguro.
@@ -99,7 +99,7 @@ Em conformidade com as diretrizes de avaliação, segue o detalhamento de escopo
 | :--- | :--- | :--- |
 | **Luis Brito** | Engenharia de Backend, arquitetura das rotas da API, consumo assíncrono do modelo de IA e lógica matemática do motor de gamificação. | Commits estruturais nas pastas `/api`, `/action` e `/includes`. |
 | **Henrique Ferreira** | Modelagem física e lógica do banco de dados, mapeamento de restrições de integridade, padronização do ambiente e versionamento documental. | Commits de setup na pasta `/config`, `/docs` e arquivo `banco.sql`. |
-| **schezaada** | Construção e integração visual das Views (telas), amarração de rotas estáticas e execução física do roteiro de testes homologados. | Commits de interface na pasta `/pages`, `/assets` e arquivo `evidencias_teste.md`. |
+| **Arthur Schettini** | Construção e integração visual das Views (telas), amarração de rotas estáticas e execução física do roteiro de testes homologados. | Commits de interface na pasta `/pages`, `/assets` e arquivo `evidencias_teste.md`. |
 
 ---
 *MetaXP © 2026 - Desenvolvido para o Centro Universitário de Brasília.*
