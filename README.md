@@ -73,22 +73,23 @@ Toda a propriedade intelectual e as evidências de engenharia do projeto estão 
  ┗ 📜 index.php  # Ponto de entrada (Bootstrapper com redirecionamento limpo)
 
 🚀 Instruções de Instalação e Execução
-Pré-requisitos
--Servidor Apache/Nginx (ambiente local como XAMPP ou ambiente de produção como InfinityFree).
+📋 Pré-requisitos
+Servidor Web: Apache ou Nginx (ambiente local como XAMPP/MAMP ou ambiente de produção como InfinityFree).
 
--PHP 8.0+ com a extensão cURL habilitada.
+PHP: Versão 8.0+ com a extensão cURL devidamente habilitada.
 
--SGBD MySQL ou MariaDB.
+Banco de Dados: SGBD MySQL ou MariaDB.
 
-Instalação Passo a Passo
-1. Clone este repositório no seu diretório web:
+💻 Instalação Passo a Passo
+Clone o repositório no diretório do seu servidor local ou ambiente de hospedagem:
+
+Bash
 git clone [https://github.com/britoxzn/MetaXP-Projeto-Integrador.git](https://github.com/britoxzn/MetaXP-Projeto-Integrador.git)
+2. **Importe o banco de dados** utilizando o script estrutural contido em `/docs/banco.sql` através do seu gerenciador (como phpMyAdmin).
+3. **Configure as credenciais** de acesso ao banco editando os parâmetros dentro de `/config/conexao.php`.
+4. **Execute a aplicação** acessando o endereço raiz no seu navegador. O arquivo `index.php` tratará o roteamento inicial seguro.
 
-2. Importe o arquivo /docs/banco.sql no seu servidor de Banco de Dados.
-
-3. Configure os parâmetros de conexão do banco editando as propriedades contidas em /config/conexao.php.
-
-4. Abra o navegador no endereço raiz do projeto. O arquivo index.php fará o redirecionamento automático e seguro para a interface em /pages/login.php.
+---
 
 ## 📊 Quadro de Contribuição Individual
 
@@ -96,8 +97,9 @@ Em conformidade com as diretrizes de avaliação, segue o detalhamento de escopo
 
 | Integrante | Atividades desenvolvidas | Evidências ou observações |
 | :--- | :--- | :--- |
-| **Luis Brito** | Engenharia de Backend, arquitetura das rotas da API, consumo assíncrono do modelo de IA e lógica matemática do motor de gamificação. | Commits estruturais nas pastas /api, /action e /includes. |
-| **Henrique Assunção** | Modelagem física e lógica do banco de dados, mapeamento de restrições de integridade, padronização do ambiente e versionamento documental. | Commits de setup na pasta /config, /docs e arquivo banco.sql. |
-| **Arthur Schettini** | Construção e integração visual das Views (telas), amarração de rotas estáticas e execução física do roteiro de testes homologados. | Commits de interface na pasta /pages, /assets e arquivo evidencias_teste.md. |
+| **Luis Brito** | Engenharia de Backend, arquitetura das rotas da API, consumo assíncrono do modelo de IA e lógica matemática do motor de gamificação. | Commits estruturais nas pastas `/api`, `/action` e `/includes`. |
+| **Henrique Ferreira** | Modelagem física e lógica do banco de dados, mapeamento de restrições de integridade, padronização do ambiente e versionamento documental. | Commits de setup na pasta `/config`, `/docs` e arquivo `banco.sql`. |
+| **schezaada** | Construção e integração visual das Views (telas), amarração de rotas estáticas e execução física do roteiro de testes homologados. | Commits de interface na pasta `/pages`, `/assets` e arquivo `evidencias_teste.md`. |
 
-MetaXP © 2026 - Desenvolvido para o Centro Universitário de Brasília.
+---
+*MetaXP © 2026 - Desenvolvido para o Centro Universitário de Brasília.*
