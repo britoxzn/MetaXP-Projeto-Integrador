@@ -82,7 +82,7 @@ Toda a propriedade intelectual e as evidências de engenharia do projeto estão 
 - Banco de Dados: SGBD MySQL ou MariaDB.
 
 💻 Instalação Passo a Passo
-1. **Clone o repositório no diretório do seu servidor local ou ambiente de hospedagem:
+1. Clone o repositório no diretório do seu servidor local ou ambiente de hospedagem:
 git clone [https://github.com/britoxzn/MetaXP-Projeto-Integrador.git](https://github.com/britoxzn/MetaXP-Projeto-Integrador.git)
 
 2. **Importe o banco de dados** utilizando o script estrutural contido em `/docs/banco.sql` através do seu gerenciador (como phpMyAdmin).
