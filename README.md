@@ -90,10 +90,14 @@ git clone [https://github.com/britoxzn/MetaXP-Projeto-Integrador.git](https://gi
 
 4. Abra o navegador no endereço raiz do projeto. O arquivo index.php fará o redirecionamento automático e seguro para a interface em /pages/login.php.
 
-📊 Quadro de Contribuição IndividualEm conformidade com as diretrizes de avaliação, segue o detalhamento de escopo técnico desenvolvido por cada integrante, validado pelo histórico de commits e interações do repositório:
-Integrante,Atividades desenvolvidas,Evidências ou observações
-Luis Brito,"Engenharia de Backend, arquitetura das rotas da API, consumo assíncrono do modelo de IA e lógica matemática do motor de gamificação.","Commits estruturais nas pastas /api, /action e /includes."
-Henrique Assunção,"Modelagem física e lógica do banco de dados, mapeamento de restrições de integridade, padronização do ambiente e versionamento documental.","Commits de setup na pasta /config, /docs e arquivo banco.sql."
-Arthur Schettini,"Construção e integração visual das Views (telas), amarração de rotas estáticas e execução física do roteiro de testes homologados.","Commits de interface na pasta /pages, /assets e arquivo evidencias_teste.md."
+## 📊 Quadro de Contribuição Individual
+
+Em conformidade com as diretrizes de avaliação, segue o detalhamento de escopo técnico desenvolvido por cada integrante, validado pelo histórico de commits e interações do repositório:
+
+| Integrante | Atividades desenvolvidas | Evidências ou observações |
+| :--- | :--- | :--- |
+| **Luis Brito** | Engenharia de Backend, arquitetura das rotas da API, consumo assíncrono do modelo de IA e lógica matemática do motor de gamificação. | Commits estruturais nas pastas /api, /action e /includes. |
+| **Henrique Assunção** | Modelagem física e lógica do banco de dados, mapeamento de restrições de integridade, padronização do ambiente e versionamento documental. | Commits de setup na pasta /config, /docs e arquivo banco.sql. |
+| **Arthur Schettini** | Construção e integração visual das Views (telas), amarração de rotas estáticas e execução física do roteiro de testes homologados. | Commits de interface na pasta /pages, /assets e arquivo evidencias_teste.md. |
 
 MetaXP © 2026 - Desenvolvido para o Centro Universitário de Brasília.
