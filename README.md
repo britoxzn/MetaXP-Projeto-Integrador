@@ -1,12 +1,11 @@
 # 🚀 MetaXP | Plataforma Gamificada de Gestão de Hábitos com IA
 
-![Status](https://img.shields.io/badge/Status-Estável_e_Validado-success?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Vers%C3%A3o_Final_Est%C3%A1vel-success?style=for-the-badge)
 ![PHP](https://img.shields.io/badge/PHP-8.0+-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-Banco_Relacional-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![Documentação](https://img.shields.io/badge/Documentação-Atualizada-blue?style=for-the-badge)
+![Acesso](https://img.shields.io/badge/Acesso_Professor-Liberado_vias_tiagolei-blueviolet?style=for-the-badge)
 
-> 🎓 **Projeto Integrador IV — Centro Universitário de Brasília (CEUB)**  
-> 👨‍🏫 **Orientador:** Prof. Thiago Leite  
+> 🎓 **Projeto Integrador IV — Centro Universitário de Brasília (CEUB)** > 👨‍🏫 **Orientador:** Prof. Thiago Leite  
 > 💻 **Curso:** Tecnologia em Análise e Desenvolvimento de Sistemas  
 
 ---
@@ -17,85 +16,80 @@
 | :--- | :--- | :--- |
 | **Luis Brito** | 22402920 | Engenharia de Backend, Integração de IA e Gamificação |
 | **Henrique Assunção** | 22402116 | Modelagem de Dados e Versionamento Documental |
-| **Arthur Schettini** | 22409361 | Arquitetura Técnica e Roteiros de Teste |
+| **Arthur Schettini** | 22409361 | Arquitetura Técnica e Roteiros de Teste | 
 
 ---
 
 ## 📋 Índice
 1. [Visão Geral da Solução](#-visão-geral-da-solução)
-2. [Documentação Técnica e Auditoria](#-documentação-técnica-e-auditoria)
-3. [Arquitetura e Engenharia do Projeto](#-arquitetura-e-engenharia-do-projeto)
-4. [Instruções de Instalação e Deploy](#-instruções-de-instalação-e-deploy)
+2. [Evolução do Projeto (Ajustes pós-Feedback)](#-evolução-do-projeto-ajustes-pós-feedback)
+3. [Documentação Técnica e Negocial](#-documentação-técnica-e-negocial)
+4. [Arquitetura e Engenharia de Diretórios](#-arquitetura-e-engenharia-de-diretórios)
+5. [Instruções de Instalação e Execução](#-instruções-de-instalação-e-execução)
+6. [Quadro de Contribuição Individual](#-quadro-de-contribuição-individual)
 
 ---
 
 ## 💡 Visão Geral da Solução
 
-O **MetaXP** é um ecossistema web focado no combate à procrastinação e na retenção de usuários através do cruzamento de duas vertentes principais:
-
-* 🎮 **Motor de Gamificação:** Utilização de mecânicas de *Streaks* (ofensivas), acúmulo de pontos de experiência (XP) e desbloqueio de conquistas para garantir a constância do usuário.
-* 🤖 **Integração Cognitiva (IA):** Uso de Inteligência Artificial generativa para a quebra automatizada de objetivos complexos em micro-tarefas acionáveis, mitigando a paralisia por análise.
-
----
-
-## 📂 Documentação Técnica e Auditoria
-
-Toda a fundamentação acadêmica, modelagem estrutural e validações de segurança do MetaXP encontram-se centralizadas e mapeadas dentro do diretório `/docs`:
-
-* 📑 **[Resumo Executivo Oficial](./docs/resumo_executivo.pdf):** Definição de escopo, público-alvo e modelo de MVP.
-* 💾 **[Modelagem e Dump do Banco de Dados](./docs/banco.sql):** Estrutura DDL/DML das tabelas relacionais e integridade referencial.
-* 🤖 **[Integração e Fallback da IA](./docs/documentacao_ia.md):** Mapeamento do contrato de dados via JSON e estratégias de contingência do modelo preditivo.
-* 🧪 **[Roteiro de Evidências e Testes](./docs/evidencias_teste.md):** Homologação e massa de dados dos fluxos principais da aplicação.
+O **MetaXP** é um ecossistema web voltado ao combate à procrastinação e otimização da produtividade pessoal. A plataforma atua através do cruzamento de duas vertentes principais:
+* **Motor de Gamificação (Dimensão Negocial):** Engajamento do usuário através de acúmulo de pontos de experiência (XP), manutenção de ofensivas (*streaks*) e resgate de recompensas/conquistas.
+* **Integração Cognitiva (Dimensão Técnica):** Uso de Inteligência Artificial generativa via requisições assíncronas para decompor objetivos complexos e abstratos em micro-tarefas perfeitamente acionáveis.
 
 ---
 
-## 🛠️ Arquitetura e Engenharia do Projeto
+## 🔄 Evolução do Projeto (Ajustes pós-Feedback)
 
-O projeto adota uma arquitetura modularizada focada na separação de responsabilidades (Separation of Concerns), garantindo facilidade de manutenção e desacoplamento de código:
+Atendendo às orientações e feedbacks coletados ao longo do semestre, as seguintes melhorias foram implementadas para esta versão final:
+1. **Refatoração e Modularização:** O código foi totalmente desacoplado da raiz. Telas migraram para `/pages`, processamentos para `/action` e integrações para `/api`.
+2. **Tratamento de Contingência (IA):** Implementação de camada de *fallback* para tratamento de falhas em chamadas de API externas da IA, evitando travamentos na aplicação.
+3. **Segurança de Sessão:** Centralização dos validadores de escopo e autenticação dentro da pasta `/includes`.
+4. **Padronização Documental:** Revisão completa do modelo do banco relacional e unificação dos roteiros de teste no diretório oficial de documentação.
+
+---
+
+## 📂 Documentação Técnica e Negocial
+
+Toda a propriedade intelectual e as evidências de engenharia do projeto estão centralizadas na pasta `/docs`:
+
+* 📑 **[Resumo Executivo Oficial (PDF)](./docs/resumo_executivo.pdf):** Documento oficial atualizado com base no template institucional (Público-alvo, Problema, Benefícios e Proposta de Valor).
+* 💾 **[Modelagem e Script do Banco de Dados](./docs/banco.sql):** Estrutura DDL/DML das tabelas relacionais do MySQL.
+* 🤖 **[Documentação de Integração da IA](./docs/documentacao_ia.md):** Contrato de dados JSON e logs de comportamento do modelo preditivo.
+* 🧪 **[Roteiro de Evidências e Testes](./docs/evidencias_teste.md):** Homologação dos casos de teste de uso individuais e fluxos críticos.
+
+---
+
+## 🛠️ Arquitetura e Engenharia de Diretórios
 
 ```text
 📦 MetaXP-Projeto-Integrador
- ┣ 📂 action     # Processadores de formulários, segurança e requisições (POST/GET)
- ┣ 📂 api        # Endpoints assíncronos e processamento da Generative AI
- ┣ 📂 assets     # Recursos estáticos controlados (Folhas de Estilo CSS e Scripts JS)
- ┣ 📂 config     # Centralização de credenciais de ambiente e conexão com o Banco (MySQL)
- ┣ 📂 docs       # Assets acadêmicos, diagramações e documentações markdown
- ┣ 📂 includes   # Helpers de validação, controle de sessões e core de gamificação
- ┣ 📂 pages      # Camada de Apresentação (Views/Telas visíveis ao usuário final)
- ┣ 📜 LICENSE    # Licença de uso do repositório
- ┣ 📜 README.md  # Documentação técnica principal
- ┗ 📜 index.php  # Ponto de entrada do ecossistema (Bootstrapper com redirecionamento)
+ ┣ 📂 action     # Processadores de formulários e requisições imperativas (POST/GET)
+ ┣ 📂 api        # Endpoints assíncronos e motores da inteligência artificial
+ ┣ 📂 assets     # Recursos estáticos controlados (Folhas de estilo CSS e Javascript)
+ ┣ 📂 config     # Centralização de credenciais de ambiente e drivers do banco
+ ┣ 📂 docs       # Assets acadêmicos, diagramas e relatórios técnicos (PDF/MD)
+ ┣ 📂 includes   # Helpers de validação, segurança e core de regras da gamificação
+ ┣ 📂 pages      # Camada de Apresentação (Views/Telas do usuário final)
+ ┗ 📜 index.php  # Ponto de entrada (Bootstrapper com redirecionamento limpo)
 
- 🚀 Instruções de Instalação e Deploy
-O sistema foi otimizado para rodar de forma nativa em ambientes de hospedagem compartilhada (ex: Apache/InfinityFree) ou servidores locais (XAMPP).
-
+🚀 Instruções de Instalação e Execução
 Pré-requisitos
-- Servidor Web (Apache / Nginx)
+-Servidor Apache/Nginx (ambiente local como XAMPP ou ambiente de produção como InfinityFree).
 
-- PHP 8.0 ou superior (com extensão cURL devidamente ativa para comunicação com a API de IA)
+-PHP 8.0+ com a extensão cURL habilitada.
 
-- MySQL 5.7+ ou MariaDB
+-SGBD MySQL ou MariaDB.
 
-Passo a Passo para Execução Local
-1. Clonagem do Repositório:
+Instalação Passo a Passo
+1. Clone este repositório no seu diretório web:
 git clone [https://github.com/britoxzn/MetaXP-Projeto-Integrador.git](https://github.com/britoxzn/MetaXP-Projeto-Integrador.git)
 
-1. Setup do Banco de Dados:
+2. Importe o arquivo /docs/banco.sql no seu servidor de Banco de Dados.
 
-- Acesse seu gerenciador de banco de dados (ex: phpMyAdmin).
+3. Configure os parâmetros de conexão do banco editando as propriedades contidas em /config/conexao.php.
 
-- Crie um schema vazio utilizando a collation utf8mb4_general_ci.
+4. Abra o navegador no endereço raiz do projeto. O arquivo index.php fará o redirecionamento automático e seguro para a interface em /pages/login.php.
 
-- Importe o script estrutural localizado em /docs/banco.sql.
+📊 Quadro de Contribuição IndividualEm conformidade com as diretrizes de avaliação, segue o detalhamento de escopo técnico desenvolvido por cada integrante, validado pelo histórico de commits e interações do repositório:IntegranteAtividades desenvolvidasEvidências ou observaçõesLuis BritoEngenharia de Backend, arquitetura das rotas da API, consumo assíncrono do modelo de IA e lógica matemática do motor de gamificação.Commits estruturais nas pastas /api, /action e /includes.Henrique AssunçãoModelagem física e lógica do banco de dados, mapeamento de restrições de integridade, padronização do ambiente e versionamento documental.Commits de setup na pasta /config, /docs e arquivo banco.sql.Arthur SchettiniConstrução e integração visual das Views (telas), amarração de rotas estáticas e execução física do roteiro de testes homologados.Commits de interface na pasta /pages, /assets e arquivo evidencias_teste.md.
 
-2. Parametrização do Sistema:
-
-- Navegue até a pasta /config e configure o arquivo conexao.php com as credenciais do seu ambiente local (host, user, password, dbname).
-
-3. Inicialização:
-
-- Inicialize os serviços do seu servidor local.
-
-- Acesse o projeto pelo navegador através do endereço local padrão. O arquivo raiz index.php se encarregará de rotear você automaticamente para a tela de autenticação segura em /pages/login.php.
-
-MetaXP © 2024 - Desenvolvido para o Centro Universitário de Brasília.
+MetaXP © 2026 - Desenvolvido para o Centro Universitário de Brasília.
